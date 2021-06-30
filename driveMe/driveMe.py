@@ -7,7 +7,6 @@ from werkzeug.utils import secure_filename
 driveMe = Blueprint("driveMe", __name__,
                     static_folder="/static", template_folder="templates")
 
-
 @driveMe.route("/book")
 def book():
     if "user" in session:

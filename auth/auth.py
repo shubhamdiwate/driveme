@@ -8,7 +8,6 @@ auth.secret_key = 'hello'
 
 auth = Blueprint("auth", __name__, template_folder="templates", static_folder="static")
 
-
 @auth.route("/login")
 @auth.route("/", methods=["POST", "GET"])
 def login():
